@@ -14,8 +14,8 @@ const projectData = {
 
           whatIDid: [
             'Built a multi-agent system to automatically discover, evaluate, and surface high-value online deals',
-            'Designed a hybrid pricing engine using RAG with GPT-5-mini, a QLoRA fine-tuned LLaMA 3.2 specialist agent, and a neural network model',
-            'Benchmarked 19+ models and reduced prediction error from 101.6 MSE (Linear Regression) to 29.9 MSE using an ensemble approach',
+            'Designed a ensemble approach using RAG with GPT-5-mini, a QLoRA fine-tuned LLaMA 3.2 specialist agent, and a neural network model',
+            'Benchmarked 19+ models and reduced prediction error from 101.6 MSE (Linear Regression) to 29.9 MSE using ensemble approach',
             'Integrated ChromaDB for vector storage and retrieval to enhance contextual reasoning',
             'Developed a Gradio dashboard for real-time deal tracking, logging, and 3D embedding visualization'
           ],
