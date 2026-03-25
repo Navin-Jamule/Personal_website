@@ -28,7 +28,7 @@ const HomePage = () => {
             <TypingAnimation />
           </h1>
           <p className="text-lg md:text-xl text-muted-foreground max-w-2xl mx-auto mb-10">
-building impactful AI solutions, scalable pipelines, and intelligent systems using Applied AI, NLP, and LLMs.          </p>
+building impactful AI solutions, scalable pipelines, and intelligent systems using Agentic AI, NLP, and LLMs.          </p>
 
           <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-12">
             <Button
