@@ -25,7 +25,7 @@ const AboutPage = () => {
 
           <AnimatedSection delay={0.2}>
             <p className="text-lg text-muted-foreground leading-relaxed">
-              I focus on building end-to-end ML systems that go beyond traditional approaches, especially in areas where understanding context and reasoning is important. Through projects like DealPilot, Shopinion AI, and CareerForge AI, I’ve gained hands-on experience designing and deploying practical AI solutions.
+              I focus on building end-to-end AI/ML systems that go beyond traditional approaches, especially in areas where understanding context and reasoning is important. Through projects like DealPilot, Shopinion AI, and CareerForge AI, I’ve gained hands-on experience designing and deploying practical AI solutions.
             </p>
           </AnimatedSection>
 
