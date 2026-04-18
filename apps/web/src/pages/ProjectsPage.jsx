@@ -13,6 +13,17 @@ const projects = [
     github: 'https://github.com/Navin-Jamule/DealPilot'
 
   },
+
+    {
+      id: 'cuemath-ai-tutor-screener',
+      title: 'Cuemath AI Tutor Screener',
+      description: 'Serverless voice interview platform that screens tutor candidates automatically using AI-driven follow-up probing, hybrid LLM + rule-based scoring, and auto-generated PDF recruiter reports.',
+      techStack: ['Next.js 14', 'Whisper', 'GPT-4o-mini', 'TTS-1', 'Web Audio API', 'Vercel'],
+      metrics: 'Pass/Hold/Reject verdict out of 10, 8x cheaper than GPT-4o audio at ~$0.03–0.05/interview, response latency reduced from 7–11s to near-instant.',
+      github: 'https://github.com/Navin-Jamule/Cuemath-AI-Tutor-Screener',
+      deploy: 'https://cuemath-ai-tutor-screener-mauve.vercel.app/'
+    },
+
   {
     id: 'shopinion-ai',
     title: 'Shopinion AI',

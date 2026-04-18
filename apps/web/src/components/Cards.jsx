@@ -1,6 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { Github, ArrowUpRight, Calendar, MapPin, Award } from 'lucide-react';
+import { Github, ArrowUpRight, Calendar, MapPin, Award, ExternalLink } from 'lucide-react';
 import { Badge } from './ui/badge';
 import { Card, CardContent, CardHeader, CardTitle, CardDescription } from './ui/card';
 import { Progress } from './ui/progress';
@@ -43,34 +43,8 @@ export const ExperienceCard = ({ role, company, duration, location, achievements
   </Card>
 );
 
-// export const ProjectCard = ({ id, title, description, techStack, metrics, github }) => (
-//   <Card className="flex flex-col h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-//     <CardHeader>
-//       <CardTitle className="text-2xl group-hover:text-primary transition-colors">{title}</CardTitle>
-//       <CardDescription className="text-base mt-2">{description}</CardDescription>
-//     </CardHeader>
-//     <CardContent className="flex-grow">
-//       <div className="mb-4">
-//         <p className="text-sm font-semibold mb-2">Key Metrics:</p>
-//         <p className="text-sm text-muted-foreground">{metrics}</p>
-//       </div>
-//       <div className="flex flex-wrap gap-2 mt-auto">
-//         {techStack.map((tech, i) => (
-//           <Badge key={i} variant="secondary">{tech}</Badge>
-//         ))}
-//       </div>
-//     </CardContent>
-//     <div className="p-6 pt-0 mt-auto">
-//       <Link to={`/projects/${id}`} className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline">
-//         View Case Study <ArrowUpRight className="w-4 h-4" />
-//       </Link>
-//     </div>
-//   </Card>
-// );
-
-export const ProjectCard = ({ id, title, description, techStack, metrics, github }) => (
+export const ProjectCard = ({ id, title, description, techStack, metrics, github, deploy }) => (
   <Card className="flex flex-col h-full hover:shadow-xl transition-all duration-300 hover:-translate-y-2 group">
-
     <CardHeader>
       <CardTitle className="text-2xl group-hover:text-primary transition-colors">
         {title}
@@ -85,38 +59,31 @@ export const ProjectCard = ({ id, title, description, techStack, metrics, github
         <p className="text-sm font-semibold mb-2">Key Metrics:</p>
         <p className="text-sm text-muted-foreground">{metrics}</p>
       </div>
-
       <div className="flex flex-wrap gap-2 mt-auto">
         {techStack.map((tech, i) => (
           <Badge key={i} variant="secondary">{tech}</Badge>
         ))}
       </div>
     </CardContent>
+
     <div className="p-6 pt-0 mt-auto flex items-center justify-between">
-
-      {/* GitHub Icon */}
-      {github && (
-        <a
-          href={github}
-          target="_blank"
-          rel="noopener noreferrer"
-          title="View Source Code"
-          className="p-2 rounded-full hover:bg-muted transition"
-        >
-          <Github className="w-5 h-5" />
-        </a>
-      )}
-
-      {/* Case Study */}
-      <Link to={`/projects/${id}`}
-        className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline"
-      >
+      <div className="flex items-center gap-2">
+        {github && (
+          <a href={github} target="_blank" rel="noopener noreferrer" title="View Source Code" className="p-2 rounded-full hover:bg-muted transition">
+            <Github className="w-5 h-5" />
+          </a>
+        )}
+        {deploy && (
+          <a href={deploy} target="_blank" rel="noopener noreferrer" title="View Live Demo" className="p-2 rounded-full hover:bg-muted transition">
+            <ExternalLink className="w-5 h-5" />
+          </a>
+        )}
+      </div>
+      <Link to={`/projects/${id}`} className="inline-flex items-center gap-2 text-sm font-medium text-primary hover:underline">
         View Case Study
         <ArrowUpRight className="w-4 h-4" />
       </Link>
-
     </div>
-
   </Card>
 );
 
