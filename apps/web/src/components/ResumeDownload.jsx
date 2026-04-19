@@ -10,7 +10,7 @@ const ResumeDownload = ({ variant = "default", className = "" }) => {
     // Simulate PDF generation/fetch
     setTimeout(() => {
       const link = document.createElement('a');
-      link.href = 'https://drive.google.com/file/d/1eQCB6aPQjkB26ERZ2jzMcnlW5rzG1g41/view?usp=sharing'
+      link.href = 'https://drive.google.com/file/d/1g33-C_YJ9K8Ic1Y5Co038vuWGQ-MxRT3/view?usp=sharing'
       link.download = 'Navin_Jamule_Resume.pdf';
       document.body.appendChild(link);
       link.click();
